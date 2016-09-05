@@ -5,11 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:weightSum="1">
     <me.wangyuwei.particleview.ParticleView
         android:id="@+id/anim_text"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
         android:background="#0867AB"
         pv:pv_host_text="TeleBook"
         pv:pv_particle_text="NIT"
@@ -17,19 +17,6 @@
         android:layout_gravity="center"
         pv:pv_spread_anim_time="1000"
         pv:pv_host_text_anim_time="3000" />
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="fill_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="200dp"
-        android:src="@drawable/nitrr_logo"
-        android:layout_gravity="center"
-        />
-
-
-
-
 
 
 </LinearLayout>

@@ -7,16 +7,45 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
 
+    int noofsize = 3;
+    ViewPager myPager = null;
+    int count = 0;
+    Timer timer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         Button b1;
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager_home);
-        viewPager.setAdapter(new CustomPagerAdapter(this));
+        CustomPagerAdapter adapter = new CustomPagerAdapter(MainActivity.this,noofsize);
+        myPager = (ViewPager) findViewById(R.id.viewpager_home);
+        myPager.setAdapter(adapter);
+        myPager.setCurrentItem(0);
+
+        // Timer for auto sliding
+        timer  = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(count<=3){
+                            myPager.setCurrentItem(count);
+                            count++;
+                        }else{
+                            count = 0;
+                            myPager.setCurrentItem(count);
+                        }
+                    }
+                });
+            }
+        }, 500, 2000);
             b1 = (Button) findViewById(R.id.Login_home_page);
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
