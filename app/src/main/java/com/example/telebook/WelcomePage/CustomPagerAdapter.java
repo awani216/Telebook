@@ -1,4 +1,4 @@
-package com.example.telebook;
+package com.example.telebook.WelcomePage;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

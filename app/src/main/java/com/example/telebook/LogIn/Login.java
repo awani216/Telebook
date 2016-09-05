@@ -1,7 +1,9 @@
-package com.example.telebook;
+package com.example.telebook.LogIn;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.telebook.R;
 
 public class Login extends AppCompatActivity {
 

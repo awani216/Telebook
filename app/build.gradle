@@ -24,5 +24,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
 
+    //for splashscreen animation text
     compile 'me.wangyuwei:ParticleView:1.0.3'
+
+    //for tracking
+    compile 'com.github.vipulasri:timelineview:1.0.3'
+
+
 }
