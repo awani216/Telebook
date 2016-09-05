@@ -17,8 +17,7 @@
         </activity>
         <activity android:name=".LogIn.Login" />
         <activity android:name=".WelcomePage.MainActivity" />
-        <activity android:name=".Tracking.Tracking_Vertical" />
-        <activity android:name=".Tracking.Tracking_Recycler_Item"></activity>
+        <activity android:name=".Tracking.View.Tracking_Vertical" />
     </application>
 
 </manifest>
