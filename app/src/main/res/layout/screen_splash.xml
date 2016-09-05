@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="100dp"
-    android:background="@drawable/gradient_colors">
+    >
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/anim_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#0867AB"
+        pv:pv_host_text="TeleBook"
+        pv:pv_particle_text="NIT"
+        pv:pv_text_anim_time="2000"
+        android:layout_gravity="center"
+        pv:pv_spread_anim_time="1000"
+        pv:pv_host_text_anim_time="3000" />
+
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="fill_parent"
+        android:layout_marginTop="50dp"
         android:layout_height="200dp"
         android:src="@drawable/nitrr_logo"
         android:layout_gravity="center"
-    />
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:textSize="23dp"
-        android:textColor="#000000"
-        android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:text="National Institute of Technology, Raipur" />
+        />
+
+
+
+
+
 
 </LinearLayout>
