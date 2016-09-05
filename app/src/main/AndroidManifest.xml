@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LogIn.Login" />
-        <activity android:name=".WelcomePage.MainActivity"></activity>
+        <activity android:name=".WelcomePage.MainActivity" />
+        <activity android:name=".Tracking.Tracking_Vertical" />
+        <activity android:name=".Tracking.Tracking_Recycler_Item"></activity>
     </application>
 
 </manifest>
