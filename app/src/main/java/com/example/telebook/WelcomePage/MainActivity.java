@@ -7,13 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-<<<<<<< HEAD:app/src/main/java/com/example/telebook/MainActivity.java
 import java.util.Timer;
 import java.util.TimerTask;
-=======
 import com.example.telebook.LogIn.Login;
 import com.example.telebook.R;
->>>>>>> a0ccca4473a06b4e28713721f0dfdcb14f9d62b6:app/src/main/java/com/example/telebook/WelcomePage/MainActivity.java
 
 public class MainActivity extends AppCompatActivity {
 
