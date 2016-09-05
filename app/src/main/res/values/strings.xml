@@ -3,4 +3,5 @@
     <string name="red">red</string>
     <string name="blue">blue</string>
     <string name="orange">orange</string>
+    <string name="title_activity_tracking_front">TrackingFront</string>
 </resources>

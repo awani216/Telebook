@@ -1,9 +1,12 @@
-package com.example.telebook;
+package com.example.telebook.SplashScreen;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.telebook.WelcomePage.MainActivity;
+import com.example.telebook.R;
 
 import me.wangyuwei.particleview.ParticleView;
 
@@ -12,6 +15,7 @@ import me.wangyuwei.particleview.ParticleView;
  */
 public class SplashScreen extends Activity{
     private ParticleView anime_text;
+//    @BindView
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 8000;
     @Override

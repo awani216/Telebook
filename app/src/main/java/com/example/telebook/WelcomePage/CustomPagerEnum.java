@@ -1,4 +1,6 @@
-package com.example.telebook;
+package com.example.telebook.WelcomePage;
+
+import com.example.telebook.R;
 
 public enum CustomPagerEnum {
 
