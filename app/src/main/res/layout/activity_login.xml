@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/logo_lg_in"
         android:src="@drawable/nitrr_logo"
-        android:layout_gravity="center_horizontal" android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
