@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="#0867AB"
         pv:pv_host_text="TeleBook"
-        pv:pv_particle_text="NIT"
+        pv:pv_particle_text="NITRR"
         pv:pv_text_anim_time="2000"
         android:layout_gravity="center"
         pv:pv_spread_anim_time="1000"
