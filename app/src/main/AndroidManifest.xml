@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogIn.Login" />
+        <activity android:name=".LogIn.View.Login" />
         <activity android:name=".WelcomePage.MainActivity" />
         <activity android:name=".Tracking.View.Tracking_Vertical" />
     </application>
