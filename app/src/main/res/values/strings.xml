@@ -4,4 +4,14 @@
     <string name="blue">blue</string>
     <string name="orange">orange</string>
     <string name="title_activity_tracking_front">TrackingFront</string>
+    <string-array name="room_list">
+        <item>E-Hall</item>
+        <item>Architecture Auditorium</item>
+        <item>G-1</item>
+        <item>G-2</item>
+        <item>G-3</item>
+        <item>G-4</item>
+        <item>F-40</item>
+        <item>F-42</item>
+    </string-array>
 </resources>

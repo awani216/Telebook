@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import com.example.telebook.LogIn.Login;
+import com.example.telebook.LogIn.View.Login;
 import com.example.telebook.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,8 +48,20 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }, 500, 2000);
+<<<<<<< HEAD
 
 
+=======
+            b1 = (Button) findViewById(R.id.Login_home_page);
+        assert b1 != null;
+        b1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i_login = new Intent(MainActivity.this,Login.class);
+                    startActivity(i_login);
+                }
+            });
+>>>>>>> e22c4088608d06630e0d7c76fb45e035c40f0c77
         }
     }
 
