@@ -48,10 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }, 500, 2000);
-<<<<<<< HEAD
 
-
-=======
             b1 = (Button) findViewById(R.id.Login_home_page);
         assert b1 != null;
         b1.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(i_login);
                 }
             });
->>>>>>> e22c4088608d06630e0d7c76fb45e035c40f0c77
         }
     }
 
