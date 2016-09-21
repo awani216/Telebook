@@ -3,28 +3,31 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="#4876FF">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
+        android:text="Stay tuned !!!!"
+        android:textColor="#ffffff"
         android:id="@+id/room_name" />
 
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:id="@+id/room_image"
-        android:layout_marginTop="10dp"
-        android:background="#b11111" />
 
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:text="New Text"
-        android:background="@drawable/gradient_colors"
-        android:layout_marginTop="10dp"
-        android:id="@+id/textView"
-        />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbars="horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/esum1"/>
+
+    </android.support.v7.widget.CardView>
 </LinearLayout>

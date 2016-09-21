@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.activity_welcome_page);
         Button b1;
 
         CustomPagerAdapter adapter = new CustomPagerAdapter(MainActivity.this,noofsize);
@@ -48,14 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }, 500, 2000);
-            b1 = (Button) findViewById(R.id.Login_home_page);
-            b1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i_login = new Intent(MainActivity.this,Login.class);
-                    startActivity(i_login);
-                }
-            });
+
 
         }
     }
