@@ -28,7 +28,7 @@ public class RetrofitLogInProvider implements LoginProvider {
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("Base Url")
+                .baseUrl("http://192.168.43.188:8000/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();

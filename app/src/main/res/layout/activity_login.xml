@@ -9,11 +9,11 @@
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     tools:context=".LogIn.View.Login">
-    <TextView
-        android:id="@+id/login_title"
+    <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:id="@+id/login_title"
         android:layout_marginTop="22dp"
         android:gravity="center_horizontal"
         android:text="Account Login"

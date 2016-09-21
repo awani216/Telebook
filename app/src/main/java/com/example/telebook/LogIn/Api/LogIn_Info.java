@@ -12,6 +12,6 @@ import retrofit2.http.POST;
  */
 public interface LogIn_Info {
     @FormUrlEncoded
-    @POST("Url")
+    @POST("test/")
     Call<SendLoginData> getSuccess (@Field("username") String username, @Field("password") String password);
 }
