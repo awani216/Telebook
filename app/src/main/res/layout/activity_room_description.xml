@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/event_name"
                 android:hint="Event name"
+                android:drawableTint="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -72,6 +73,7 @@
                 android:id="@+id/date"
                 android:hint="Date (DD/MM/YY)"
                 android:inputType="date"
+                android:drawableTint="@color/colorPrimaryDark"
                 android:layout_marginTop="4dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_alignTop="@+id/view"
@@ -93,6 +95,7 @@
                 android:layout_marginTop="4dp"
                 android:hint="Time (in 24 hours)"
                 android:inputType="time"
+                android:drawableTint="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_below="@+id/float_date"
                 android:layout_alignParentRight="true"
@@ -112,6 +115,7 @@
                     android:layout_marginTop="4dp"
                     android:hint="Floor"
                     android:inputType="number"
+                    android:drawableTint="@color/colorPrimaryDark"
                     android:textColorHint="@color/colorPrimaryDark"
                     android:layout_below="@+id/float_time"
                     android:layout_alignParentRight="true"
@@ -133,6 +137,7 @@
                     android:inputType="number"
                     android:textColorHint="@color/colorPrimaryDark"
                     android:layout_below="@+id/float_Capacity"
+                    android:drawableTint="@color/colorPrimaryDark"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
             </android.support.design.widget.TextInputLayout>
@@ -279,7 +284,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:background="#0899AB"
+                android:background="@drawable/button_background"
                 android:layout_marginTop="4dp"/>
             <Button
                 android:layout_width="wrap_content"
@@ -292,7 +297,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:background="#0899AB"/>
+                android:background="@drawable/button_background"/>
 
         </RelativeLayout>
         </ScrollView>

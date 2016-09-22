@@ -46,7 +46,7 @@
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:drawableTint="#FF4081"
+                    android:drawableTint="@color/colorPrimaryDark"
                     android:singleLine="true"
                     android:hint="User Name"
                     android:textColorHint="@color/colorPrimaryDark"
@@ -64,7 +64,7 @@
                     android:layout_marginTop="16dp"
                     android:singleLine="true"
                     android:id="@+id/password"
-                    android:drawableTint="#FF4081"
+                    android:drawableTint="@color/colorPrimaryDark"
                     android:hint="Password"
                     android:textColorHint="@color/colorPrimaryDark"
                     android:inputType="numberPassword" />
@@ -75,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:paddingTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
                 android:text="Forgot Password?" />
 
 
@@ -82,7 +83,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:background="#0899AB"
+                android:background="@drawable/button_background"
                 android:text="Sign in"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:id="@+id/login_button"
