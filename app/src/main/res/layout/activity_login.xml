@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     tools:context=".LogIn.View.Login">
-    <EditText
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -88,11 +88,16 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </RelativeLayout>
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-      android:id="@+id/progreessbar_login"
-        android:visibility="invisible"
+    <com.tt.whorlviewlibrary.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/whorl_login"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:layout_centerInParent="true"
-        />
+        android:layout_below="@+id/login_title"
+        app:whorlview_circle_colors="#F14336_#ffffff_#5677fc_#F44336_#4CAF50"
+        app:whorlview_circle_speed="270"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="6"
+        app:whorlview_sweepAngle="125">
+    </com.tt.whorlviewlibrary.WhorlView>
 </RelativeLayout>

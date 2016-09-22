@@ -7,6 +7,7 @@ import android.os.Handler;
 
 import com.example.telebook.WelcomePage.MainActivity;
 import com.example.telebook.R;
+import com.tt.whorlviewlibrary.WhorlView;
 
 import me.wangyuwei.particleview.ParticleView;
 
@@ -15,14 +16,14 @@ import me.wangyuwei.particleview.ParticleView;
  */
 public class SplashScreen extends Activity{
     private ParticleView anime_text;
-//    @BindView
-    // Splash screen timer
+
     private static int SPLASH_TIME_OUT = 8000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.screen_splash);
+
         anime_text=(ParticleView)findViewById(R.id.anim_text);
         anime_text.startAnim();
 

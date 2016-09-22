@@ -14,20 +14,23 @@ import com.example.telebook.LogIn.Presenter.LoginPresenter;
 import com.example.telebook.LogIn.Presenter.LoginPresenterImpl;
 import com.example.telebook.R;
 import com.example.telebook.WelcomePage.MainActivity;
+import com.tt.whorlviewlibrary.WhorlView;
 
 public class Login extends AppCompatActivity implements LogInView {
     EditText user_name,password;
     Button login_button;
     String name,pswrd;
     LoginPresenter loginPresenter;
-    ProgressBar progressBar;
+    WhorlView whorlView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         user_name=(EditText)findViewById(R.id.user_name);
         password=(EditText)findViewById(R.id.password);
-        progressBar=(ProgressBar)findViewById(R.id.progreessbar_login);
+        whorlView=(WhorlView)findViewById(R.id.whorl_login);
+        whorlView.setVisibility(View.INVISIBLE);
+//        progressBar=(ProgressBar)findViewById(R.id.progreessbar_login);
         login_button=(Button)findViewById(R.id.login_button);
         loginPresenter=new LoginPresenterImpl(new RetrofitLogInProvider(),this);
         login_button.setOnClickListener(new View.OnClickListener() {
@@ -45,10 +48,10 @@ public class Login extends AppCompatActivity implements LogInView {
     public void showProgress(boolean visible) {
         if(visible)
         {
-            progressBar.setVisibility(View.VISIBLE);
+            whorlView.start();
         }
         else
-            progressBar.setVisibility(View.INVISIBLE);
+            whorlView.stop();
 
     }
 

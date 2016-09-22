@@ -8,6 +8,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Tracking.View.Tracking_Vertical">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_tracking"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewTracking"
         android:layout_width="match_parent"
