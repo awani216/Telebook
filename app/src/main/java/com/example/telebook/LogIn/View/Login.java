@@ -29,7 +29,8 @@ public class Login extends AppCompatActivity implements LogInView {
         user_name=(EditText)findViewById(R.id.user_name);
         password=(EditText)findViewById(R.id.password);
         whorlView=(WhorlView)findViewById(R.id.whorl_login);
-        whorlView.setVisibility(View.INVISIBLE);
+        whorlView.start();
+
 //        progressBar=(ProgressBar)findViewById(R.id.progreessbar_login);
         login_button=(Button)findViewById(R.id.login_button);
         loginPresenter=new LoginPresenterImpl(new RetrofitLogInProvider(),this);

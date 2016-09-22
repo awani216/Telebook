@@ -9,6 +9,8 @@ import android.widget.Button;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import com.example.telebook.LogIn.LoginTest;
 import com.example.telebook.LogIn.View.Login;
 import com.example.telebook.R;
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.activity_login);
         Button b1;
 
         CustomPagerAdapter adapter = new CustomPagerAdapter(MainActivity.this,noofsize);
@@ -29,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         myPager.setAdapter(adapter);
         myPager.setCurrentItem(0);
 
-        // Timer for auto sliding
         timer  = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -48,15 +49,15 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }, 500, 2000);
-            b1 = (Button) findViewById(R.id.Login_home_page);
+
+            b1 = (Button) findViewById(R.id.login_button);
         assert b1 != null;
         b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i_login = new Intent(MainActivity.this,Login.class);
+                    Intent i_login = new Intent(MainActivity.this,LoginTest.class);
                     startActivity(i_login);
                 }
             });
         }
     }
-

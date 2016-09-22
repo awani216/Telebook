@@ -49,6 +49,7 @@
                     android:drawableTint="#FF4081"
                     android:singleLine="true"
                     android:hint="User Name"
+                    android:textColorHint="@color/colorPrimaryDark"
                     android:id="@+id/user_name"
                     android:inputType="textEmailAddress" />
             </android.support.design.widget.TextInputLayout>
@@ -65,6 +66,7 @@
                     android:id="@+id/password"
                     android:drawableTint="#FF4081"
                     android:hint="Password"
+                    android:textColorHint="@color/colorPrimaryDark"
                     android:inputType="numberPassword" />
             </android.support.design.widget.TextInputLayout>
 
@@ -82,22 +84,31 @@
                 android:layout_margin="22dp"
                 android:background="#0899AB"
                 android:text="Sign in"
+                android:textColorHint="@color/colorPrimaryDark"
                 android:id="@+id/login_button"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="test"
+                android:id="@+id/test1"
+                />
         </LinearLayout>
     </RelativeLayout>
-    <com.tt.whorlviewlibrary.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.tt.whorlviewlibrary.WhorlView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/whorl_login"
         android:layout_width="1dp"
         android:layout_height="1dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/login_title"
         app:whorlview_circle_colors="#F14336_#ffffff_#5677fc_#F44336_#4CAF50"
         app:whorlview_circle_speed="270"
         app:whorlview_parallax="fast"
         app:whorlview_strokeWidth="6"
-        app:whorlview_sweepAngle="125">
+        app:whorlview_sweepAngle="90"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true">
     </com.tt.whorlviewlibrary.WhorlView>
 </RelativeLayout>
+

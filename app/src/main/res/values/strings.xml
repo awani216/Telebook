@@ -1,7 +1,31 @@
 <resources>
     <string name="app_name">TeleBook</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
     <string name="red">red</string>
     <string name="blue">blue</string>
     <string name="orange">orange</string>
     <string name="title_activity_tracking_front">TrackingFront</string>
+    <string-array name="room_list">
+        <item>E-Hall</item>
+        <item>Architecture Auditorium</item>
+        <item>G-1</item>
+        <item>G-2</item>
+        <item>G-3</item>
+        <item>G-4</item>
+        <item>F-40</item>
+        <item>F-42</item>
+    </string-array>
+
+    <string-array name="nav_drawer_labels">
+        <item></item>
+        <item>Home</item>
+        <item>Register request</item>
+        <item>History </item>
+        <item>College Events</item>
+        <item>Settings</item>
+        <item>About us</item>
+        <item>App Developers</item>
+
+    </string-array>
 </resources>
