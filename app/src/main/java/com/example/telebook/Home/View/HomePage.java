@@ -27,8 +27,7 @@ public class HomePage extends Activity implements NavigationDrawer.FragmentDrawe
         setContentView(R.layout.activity_home);
         toolbar=(Toolbar)findViewById(R.id.toolbar);
 
-        navigationDrawer = (NavigationDrawer)
-                getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
+        navigationDrawer = (NavigationDrawer)getFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
 
         navigationDrawer.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), toolbar);
         navigationDrawer.setDrawerListener(this);

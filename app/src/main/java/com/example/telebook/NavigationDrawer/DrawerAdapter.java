@@ -76,6 +76,10 @@ public class DrawerAdapter extends RecyclerView.Adapter {
         iconList.add(R.drawable.ecell_logo);
         iconList.add(R.drawable.ecell_logo);
         iconList.add(R.drawable.ecell_logo);
+        iconList.add(R.drawable.ecell_logo);
+        iconList.add(R.drawable.ecell_logo);
+        iconList.add(R.drawable.ecell_logo);
+
     }
 
     class TitleViewHolder extends RecyclerView.ViewHolder {

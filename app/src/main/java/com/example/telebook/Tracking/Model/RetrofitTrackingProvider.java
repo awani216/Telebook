@@ -26,7 +26,7 @@ public class RetrofitTrackingProvider implements TrackDataProvider{
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://198.168............")
+                .baseUrl("http://192.168.0.133:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

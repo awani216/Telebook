@@ -16,9 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".LogIn.View.Login" />
-        <activity android:name=".WelcomePage.MainActivity" />
         <activity android:name=".Tracking.View.Tracking_Vertical" />
-        <activity android:name=".Home.View.HomePage.home"></activity>
+        <activity android:name=".Home.View.HomePage" />
+        <activity android:name=".LogIn.LoginTest" />
+        <activity android:name=".LogIn.Room_Description" />
+        <activity android:name=".LogIn.RoomSelection" />
+        <activity
+            android:name=".Helper.Sample"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

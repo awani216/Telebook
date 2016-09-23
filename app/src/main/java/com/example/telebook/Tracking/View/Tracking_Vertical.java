@@ -39,7 +39,6 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
         recyclerViewTracking.setLayoutManager(linearLayoutManager);
         recyclerViewTracking.setAdapter(trackAdapter);
         trackPresenter.getTracking(1,1);
-
     }
 
     @Override
@@ -54,7 +53,8 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
 
     @Override
     public void onTrackingRecieved(List<TrackData> trackDatas) {
-
+        trackAdapter.setData(trackDatas);
+        trackAdapter.notifyDataSetChanged();
     }
 
 

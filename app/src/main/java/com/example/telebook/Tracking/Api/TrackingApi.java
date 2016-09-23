@@ -10,6 +10,6 @@ import retrofit2.http.Query;
  * Created by iket on 21/9/16.
  */
 public interface TrackingApi {
-    @GET("url")
-    Call<TrackResponse> getTrackData(@Query("UserId") int userId,@Query("ReqId") int ReqId);
+    @GET("track/")
+    Call<TrackResponse> getTrackData(@Query("userid") int userid,@Query("reqid") int reqid);
 }

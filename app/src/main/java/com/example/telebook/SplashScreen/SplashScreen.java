@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.telebook.Helper.Sample;
+import com.example.telebook.LogIn.LoginTest;
+import com.example.telebook.LogIn.View.Login;
+import com.example.telebook.Tracking.View.Tracking_Vertical;
 import com.example.telebook.WelcomePage.MainActivity;
 import com.example.telebook.R;
 import com.tt.whorlviewlibrary.WhorlView;
@@ -41,10 +45,9 @@ public class SplashScreen extends Activity{
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreen.this,MainActivity.class);
+                Intent i = new Intent(SplashScreen.this,Sample.class);
                 startActivity(i);
 
-                // close this activity
                 finish();
 
             }
