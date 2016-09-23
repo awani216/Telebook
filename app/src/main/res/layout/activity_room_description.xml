@@ -162,116 +162,46 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_below="@+id/preferred_room"
                 android:layout_alignLeft="@+id/preferred_room"
-                android:layout_alignStart="@+id/preferred_room" />
+                android:layout_alignStart="@+id/preferred_room"
+                android:background="@drawable/spinner_border"
+                android:layout_marginTop="4dp"/>
 
-            <TextView
+
+
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Mike: "
+                android:text="Mike"
+                android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/mike"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_below="@+id/spinner"
-                android:layout_alignLeft="@+id/spinner"
-                android:layout_alignStart="@+id/spinner" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/checkBox"
                 android:checked="false"
                 android:buttonTint="@color/colorPrimaryDark"
-                android:layout_below="@+id/spinner"
-                android:layout_toRightOf="@+id/preferred_room"
-                android:layout_toEndOf="@+id/preferred_room" />
+                android:layout_below="@+id/spinner" />
+
+
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/checkBox2"
-                android:checked="false"
+                android:text="Projector"
                 android:buttonTint="@color/colorPrimaryDark"
-                android:layout_marginLeft="37dp"
-                android:layout_marginStart="37dp"
-                android:layout_above="@+id/textView2"
-                android:layout_toRightOf="@+id/checkBox"
-                android:layout_toEndOf="@+id/checkBox" />
-
-            <TextView
-                android:layout_marginTop="4dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Projector:"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/textView2"
-                android:layout_below="@+id/checkBox"
-                android:layout_alignLeft="@+id/mike"
-                android:layout_alignStart="@+id/mike" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:buttonTint="@color/colorPrimaryDark"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/checkBox3"
-                android:layout_below="@+id/checkBox"
-                android:layout_alignLeft="@+id/checkBox"
-                android:layout_alignStart="@+id/checkBox"
-                android:checked="false" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:buttonTint="@color/colorPrimaryDark"
-                android:id="@+id/checkBox4"
-                android:layout_alignTop="@+id/checkBox3"
-                android:layout_alignLeft="@+id/checkBox2"
-                android:layout_alignStart="@+id/checkBox2"
+                android:id="@+id/projector"
+               android:layout_below="@id/mike"
                 android:textColor="@color/colorPrimaryDark"
                 android:checked="false" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Stage:"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/textView3"
-                android:layout_below="@+id/checkBox3"
-                android:layout_alignLeft="@+id/textView2"
-                android:layout_alignStart="@+id/textView2" />
+
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Yes"
+                android:text="Stage"
                 android:buttonTint="@color/colorPrimaryDark"
                 android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/checkBox5"
-                android:layout_below="@+id/checkBox3"
-                android:layout_alignLeft="@+id/checkBox3"
-                android:layout_alignStart="@+id/checkBox3"
-                android:checked="false" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:buttonTint="@color/colorPrimaryDark"
-                android:textColor="@color/colorPrimaryDark"
-                android:id="@+id/checkBox6"
-                android:layout_below="@+id/checkBox4"
-                android:layout_alignLeft="@+id/checkBox4"
-                android:layout_alignStart="@+id/checkBox4"
+                android:id="@+id/stage"
+                android:layout_below="@+id/projector"
+                android:layout_alignLeft="@+id/projector"
+                android:layout_alignStart="@+id/projector"
                 android:checked="false" />
 
             <Button
@@ -279,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:text="APPLY FITER"
                 android:id="@+id/apply_filter"
-                android:layout_below="@+id/checkBox5"
+                android:layout_below="@+id/stage"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
