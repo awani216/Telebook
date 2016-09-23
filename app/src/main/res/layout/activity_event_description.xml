@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:background="#4876FF">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +12,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Stay tuned !!!!"
         android:textColor="#ffffff"
-        android:id="@+id/room_name" />
+        android:id="@+id/room_name"
+        android:textStyle="bold"/>
 
 
 

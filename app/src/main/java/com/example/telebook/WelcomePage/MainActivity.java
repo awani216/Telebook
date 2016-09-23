@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 500, 2000);
 
-            b1 = (Button) findViewById(R.id.Login_home_page);
+            b1 = (Button) findViewById(R.id.button_login_welcome);
         assert b1 != null;
         b1.setOnClickListener(new View.OnClickListener() {
                 @Override
