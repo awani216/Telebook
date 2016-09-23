@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Event Name: "
+        android:textColor="@color/colorPrimaryDark"
         android:id="@+id/reg_event_name"
       />
     <TextView
@@ -53,112 +54,135 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:layout_below="@+id/reg_event_name"
-        android:layout_marginTop="4dp"
         android:id="@+id/display_event_name"
-        />
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignTop="@+id/reg_event_name"
+        android:layout_centerHorizontal="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Venue:"
         android:layout_below="@+id/display_event_name"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/reg_venue"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:layout_below="@+id/reg_venue"
-        android:layout_marginTop="4dp"
         android:id="@+id/display_venue"
-        />
+        android:layout_alignTop="@+id/reg_venue"
+        android:layout_centerHorizontal="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Date: "
         android:layout_below="@+id/display_venue"
         android:id="@+id/reg_date"
+        android:layout_marginTop="8dp"
         />
     <TextView
         android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:layout_below="@+id/reg_date"
-        android:layout_marginTop="4dp"
         android:id="@+id/display_date"
-        />
+        android:layout_alignTop="@+id/reg_date"
+        android:layout_below="@+id/display_venue"
+        android:layout_centerHorizontal="true" />
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Time:"
         android:layout_below="@+id/display_date"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/reg_time"
         />
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:layout_below="@+id/reg_time"
-        android:layout_marginTop="4dp"
         android:id="@+id/display_time"
-        />
+        android:layout_alignTop="@+id/reg_time"
+        android:layout_centerHorizontal="true" />
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Conducted by: "
         android:layout_below="@+id/display_time"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/conducted_by"
         />
     <Spinner
         android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
         android:id="@+id/spinner_conducted_by"
         android:layout_below="@id/conducted_by"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_border"/>
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Under: "
         android:layout_below="@+id/spinner_conducted_by"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/under"
         />
     <Spinner
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
         android:layout_height="wrap_content"
         android:id="@+id/spinner_under"
         android:layout_below="@id/under"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_border"/>
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description: "
         android:layout_below="@+id/spinner_under"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/description"
         />
     <EditText
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/description_edittext"
         android:layout_below="@+id/description" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORWARD"
+        android:id="@+id/button"
+        android:layout_below="@+id/description_edittext"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background"/>
+
+
 </RelativeLayout>
     </ScrollView>
     </android.support.v7.widget.CardView>
-
-
 
 
 </RelativeLayout>

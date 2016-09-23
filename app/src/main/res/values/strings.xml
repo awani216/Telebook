@@ -14,7 +14,30 @@
         <item>G-3</item>
         <item>G-4</item>
         <item>F-40</item>
-        <item>F-42</item>
+        <item>others</item>
+    </string-array>
+    <string-array name="conducted_by_list">
+        <item>Club</item>
+        <item>Committee</item>
+        <item>Department</item>
+    </string-array>
+    <string-array name="club_name">
+        <item>Abhinay</item>
+        <item>Raaga</item>
+        <item>Nrityam</item>
+        <item>Rajbhasha</item>
+    </string-array>
+    <string-array name="committee_name">
+        <item>Entrepreneurship-Cell</item>
+        <item>Technocracy</item>
+        <item>Sanskriti</item>
+        <item>Shourya</item>
+    </string-array>
+    <string-array name="Department_name">
+        <item>CSE</item>
+        <item>ME</item>
+        <item>IT</item>
+        <item>ETC</item>
     </string-array>
 
     <string-array name="nav_drawer_labels">
