@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -31,6 +33,9 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
         setContentView(R.layout.activity_tracking__vertical);
         linearLayoutManager= new LinearLayoutManager(this);
         progressBar=(ProgressBar)findViewById(R.id.progressbar_tracking);
+        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_tracking);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Tracking");
 
         trackPresenter = new TrackPresenterImpl(this,new RetrofitTrackingProvider());
         trackAdapter = new TrackAdapter(this);
@@ -53,6 +58,12 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
 
     @Override
     public void onTrackingRecieved(List<TrackData> trackDatas) {
+        TrackData t;
+        for(int i=0;i<trackDatas.size();i++)
+        {
+            t=trackDatas.get(i);
+            Log.d("Resp",""+ t.getDesignation()+t.getName()+t.getMessage()+t.getResult());
+        }
         trackAdapter.setData(trackDatas);
         trackAdapter.notifyDataSetChanged();
     }

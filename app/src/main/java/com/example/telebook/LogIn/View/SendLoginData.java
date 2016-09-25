@@ -6,12 +6,20 @@ package com.example.telebook.LogIn.View;
 public class SendLoginData {
     private boolean success;
     private String message;
+    private int id;
 
-    public SendLoginData(boolean success, String message) {
+
+
+    public SendLoginData(boolean success, String message, int id) {
+
         this.success = success;
         this.message = message;
+        this.id = id;
     }
 
+    public int getId() {
+        return id;
+    }
     public boolean isSuccess() {
         return success;
     }

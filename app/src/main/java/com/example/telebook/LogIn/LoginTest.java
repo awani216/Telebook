@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.telebook.Home.View.HomePage;
+import com.example.telebook.Home.View.Sample;
 import com.example.telebook.R;
+import com.example.telebook.Tracking.View.Tracking_Vertical;
 
 public class LoginTest extends AppCompatActivity {
 
@@ -17,18 +18,19 @@ public class LoginTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         b= (Button) findViewById(R.id.login_button);
-        b1=(Button)findViewById(R.id.test1);
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LoginTest.this,RoomSelection.class);
+                Intent i = new Intent(LoginTest.this,Sample.class);
                 startActivity(i);
             }
         });
+        b1=(Button)findViewById(R.id.test1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(LoginTest.this,HomePage.class);
+                Intent in = new Intent(LoginTest.this, Tracking_Vertical.class);
                 startActivity(in);
             }
         });

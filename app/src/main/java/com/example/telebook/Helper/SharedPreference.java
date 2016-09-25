@@ -5,6 +5,8 @@ package com.example.telebook.Helper;
  */
 public class SharedPreference {
 
+    public static final String Base_Url="http://198.168.0.133:8000";
+
     private static final String KEY_USERNAME="username";
     private static final String PASSWORD="password";
     private static final int KEY_USERID=1;

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.telebook">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,14 +19,15 @@
         </activity>
         <activity android:name=".LogIn.View.Login" />
         <activity android:name=".Tracking.View.Tracking_Vertical" />
-        <activity android:name=".Home.View.HomePage" />
         <activity android:name=".LogIn.LoginTest" />
-        <activity android:name=".LogIn.Room_Description" />
+        <activity android:name=".RegisterRoom.Room_Description" />
         <activity android:name=".LogIn.RoomSelection" />
+        <activity android:name=".WelcomePage.MainActivity" />
         <activity
-            android:name=".Helper.Sample"
+            android:name=".Home.View.Sample"
             android:label="@string/title_activity_sample"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseRoom.View.SelectRoom" />
     </application>
 
 </manifest>

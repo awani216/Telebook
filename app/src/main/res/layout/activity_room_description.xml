@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:padding="12dp"
     android:id="@+id/linearlayout_room_description"
     android:background="@color/colorPrimaryDark"
+
     >
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        android:id="@+id/toolbar_roomSelect"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <TextView
-        android:layout_width="332dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:gravity="center"
         android:text="National Institute of Technology Raipur"
         android:id="@+id/textView"
         android:layout_marginTop="4dp"
@@ -238,3 +252,5 @@
 
 
 </RelativeLayout>
+
+</LinearLayout>

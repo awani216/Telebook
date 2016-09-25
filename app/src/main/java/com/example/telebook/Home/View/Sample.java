@@ -1,5 +1,6 @@
-package com.example.telebook.Helper;
+package com.example.telebook.Home.View;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,7 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.telebook.RegisterRoom.Room_Description;
 import com.example.telebook.R;
+import com.example.telebook.Tracking.View.Tracking_Vertical;
 
 public class Sample extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -81,19 +84,29 @@ public class Sample extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Intent nav;
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        switch(id)
+        {
+            case(R.id.nav_roomrequest):
+                nav=new Intent(Sample.this, Room_Description.class);
+                startActivity(nav);
+                break;
+            case(R.id.nav_events):
 
-        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+                break;
+            case(R.id.nav_history):
 
-        } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+                break;
+            case(R.id.nav_settings):
 
+                break;
+            case(R.id.nav_tracking):
+                nav=new Intent(Sample.this, Tracking_Vertical.class);
+                startActivity(nav);
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -9,16 +9,18 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.telebook.Home.View.Sample;
 import com.example.telebook.LogIn.Model.RetrofitLogInProvider;
 import com.example.telebook.LogIn.Presenter.LoginPresenter;
 import com.example.telebook.LogIn.Presenter.LoginPresenterImpl;
 import com.example.telebook.R;
+import com.example.telebook.Tracking.View.Tracking_Vertical;
 import com.example.telebook.WelcomePage.MainActivity;
 import com.tt.whorlviewlibrary.WhorlView;
 
 public class Login extends AppCompatActivity implements LogInView {
     EditText user_name,password;
-    Button login_button;
+    Button login_button,b1;
     String name,pswrd;
     LoginPresenter loginPresenter;
     WhorlView whorlView;
@@ -29,8 +31,15 @@ public class Login extends AppCompatActivity implements LogInView {
         user_name=(EditText)findViewById(R.id.user_name);
         password=(EditText)findViewById(R.id.password);
         whorlView=(WhorlView)findViewById(R.id.whorl_login);
-        whorlView.start();
-
+        whorlView.setVisibility(View.GONE);
+        b1=(Button)findViewById(R.id.test1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(Login.this,Sample.class);
+                startActivity(in);
+            }
+        });
 //        progressBar=(ProgressBar)findViewById(R.id.progreessbar_login);
         login_button=(Button)findViewById(R.id.login_button);
         loginPresenter=new LoginPresenterImpl(new RetrofitLogInProvider(),this);
@@ -66,7 +75,7 @@ public class Login extends AppCompatActivity implements LogInView {
     public void onLoginVerified(SendLoginData sendLoginData) {
         if(sendLoginData.isSuccess())
         {
-            Intent next=new Intent(Login.this, MainActivity.class);
+            Intent next=new Intent(Login.this, Sample.class);
             startActivity(next);
             finish();
         }
