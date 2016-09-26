@@ -7,6 +7,7 @@
     <string name="orange">orange</string>
     <string name="title_activity_tracking_front">TrackingFront</string>
     <string-array name="room_list">
+        <item>Select room..</item>
         <item>E-Hall</item>
         <item>Architecture Auditorium</item>
         <item>G-1</item>

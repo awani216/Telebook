@@ -9,13 +9,13 @@ import java.util.List;
  */
 public class TrackResponse {
 
-private List<TrackData> trackDatas;
+private List<TrackData> track;
 
-    public TrackResponse(List<TrackData> trackDatas) {
-        this.trackDatas = trackDatas;
+    public TrackResponse(List<TrackData> track) {
+        this.track = track;
     }
 
-    public List<TrackData> getTrackDatas() {
-        return trackDatas;
+    public List<TrackData> getTrack() {
+        return track;
     }
 }
