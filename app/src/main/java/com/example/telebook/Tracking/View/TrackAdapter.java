@@ -60,7 +60,7 @@ public class TrackAdapter extends RecyclerView.Adapter<TrackAdapter.MyViewHolder
             myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.red_marker));
         }
         else {
-            myViewHolder.status.setText(" Rejected : "+trackData.getMessage());
+            myViewHolder.status.setText(" ");
             myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.gray_marker));
         }
     }
