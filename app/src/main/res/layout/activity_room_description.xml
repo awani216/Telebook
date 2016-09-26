@@ -175,6 +175,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/mike"
                 android:checked="false"
+                android:layout_marginTop="8dp"
                 android:buttonTint="@color/colorPrimaryDark"
                 android:layout_below="@+id/spinner" />
 
