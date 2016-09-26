@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.telebook.Helper.SharedPreference;
 import com.example.telebook.Home.View.Sample;
 import com.example.telebook.LogIn.Model.RetrofitLogInProvider;
 import com.example.telebook.LogIn.Presenter.LoginPresenter;
@@ -23,15 +24,16 @@ public class Login extends AppCompatActivity implements LogInView {
     Button login_button,b1;
     String name,pswrd;
     LoginPresenter loginPresenter;
-    WhorlView whorlView;
+    ProgressBar progressBar;
+    SharedPreference sharedPreference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         user_name=(EditText)findViewById(R.id.user_name);
         password=(EditText)findViewById(R.id.password);
-        whorlView=(WhorlView)findViewById(R.id.whorl_login);
-        whorlView.setVisibility(View.GONE);
+        progressBar=(ProgressBar)findViewById(R.id.progressbar_login);
+        progressBar.setVisibility(View.INVISIBLE);
         b1=(Button)findViewById(R.id.test1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,10 +60,10 @@ public class Login extends AppCompatActivity implements LogInView {
     public void showProgress(boolean visible) {
         if(visible)
         {
-            whorlView.start();
+            progressBar.setVisibility(View.VISIBLE);
         }
         else
-            whorlView.stop();
+            progressBar.setVisibility(View.INVISIBLE);
 
     }
 
@@ -75,6 +77,8 @@ public class Login extends AppCompatActivity implements LogInView {
     public void onLoginVerified(SendLoginData sendLoginData) {
         if(sendLoginData.isSuccess())
         {
+//            sharedPreference.setUserid(sendLoginData.getId());
+//            sharedPreference.setUsername(name);
             Intent next=new Intent(Login.this, Sample.class);
             startActivity(next);
             finish();

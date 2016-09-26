@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
+
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:weightSum="1"
     >
@@ -14,6 +15,7 @@
         android:id="@+id/time_marker"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+
         app:marker_size="20dp"
 
         app:line_size="4dp"
@@ -21,26 +23,40 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
         android:elevation="10dp"
         android:layout_margin="5dp"
+        android:background="@color/colorAccent"
         android:layout_gravity="center_vertical">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Director"
+            android:layout_height="20dp"
+            android:text=" Director "
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             android:id="@+id/designation"
+            android:textStyle="bold"
             />
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="28dp"
             android:text="Dr. Sudarshan Tiwari"
             android:layout_marginLeft="20dp"
             android:textSize="25dp"
-            android:layout_gravity="center_vertical"/>
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:text="Approved"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+
+            />
 
 
 

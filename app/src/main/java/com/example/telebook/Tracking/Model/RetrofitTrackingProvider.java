@@ -3,6 +3,7 @@ package com.example.telebook.Tracking.Model;
 import android.util.Log;
 
 import com.example.telebook.Helper.SharedPreference;
+import com.example.telebook.Helper.Urls;
 import com.example.telebook.Tracking.Api.TrackingApi;
 import com.example.telebook.Tracking.OnTrackReceived;
 import com.example.telebook.Tracking.View.TrackResponse;
@@ -34,13 +35,13 @@ public class RetrofitTrackingProvider implements TrackDataProvider{
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(SharedPreference.Base_Url)
+                .baseUrl(Urls.Base_Url)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();
 
         final TrackingApi request = retrofit.create(TrackingApi.class);
-        Call<TrackResponse> call=request.getTrackData(1,1);
+        Call<TrackResponse> call=request.getTrackData(3,1);
         Log.d("Response","2");
         call.enqueue(new Callback<TrackResponse>() {
             @Override

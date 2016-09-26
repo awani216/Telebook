@@ -10,7 +10,6 @@ import android.widget.Button;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.example.telebook.LogIn.LoginTest;
 import com.example.telebook.LogIn.View.Login;
 import com.example.telebook.R;
 
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i_login = new Intent(MainActivity.this,LoginTest.class);
+                    Intent i_login = new Intent(MainActivity.this,Login.class);
                     startActivity(i_login);
                 }
             });

@@ -50,13 +50,19 @@ public class TrackAdapter extends RecyclerView.Adapter<TrackAdapter.MyViewHolder
 
         myViewHolder.name.setText(trackData.getName());
         myViewHolder.designation.setText(trackData.getDesignation());
-        if(trackData.getResult()>=1) {
+        if(trackData.getResult()==1) {
+            myViewHolder.status.setText(" Approved ");
             myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.green_marker));
         }
-        else if(trackData.getResult()==0)
-            myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.gray_marker));
-        else
+        else if(trackData.getResult()==0) {
+            myViewHolder.status.setText(" Pending... ");
+
             myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.red_marker));
+        }
+        else {
+            myViewHolder.status.setText(" Rejected : "+trackData.getMessage());
+            myViewHolder.timelineView.setMarker(context.getResources().getDrawable(R.drawable.gray_marker));
+        }
     }
 
     @Override
@@ -73,6 +79,7 @@ public class TrackAdapter extends RecyclerView.Adapter<TrackAdapter.MyViewHolder
             super(itemView);
             name=(TextView)itemView.findViewById(R.id.name);
             designation=(TextView)itemView.findViewById(R.id.designation);
+            status=(TextView)itemView.findViewById(R.id.status);
             timelineView=(TimelineView)itemView.findViewById(R.id.time_marker);
 
         }
