@@ -7,7 +7,6 @@
     android:weightSum="1"
     android:id="@+id/linearlayout_room_description"
     android:background="@color/colorPrimaryDark"
-
     >
 
     <android.support.v7.widget.Toolbar
@@ -19,15 +18,16 @@
         />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:gravity="center"
         android:text="National Institute of Technology Raipur"
         android:id="@+id/textView"
         android:layout_marginTop="4dp"
@@ -69,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/event_name"
                 android:hint="Event name"
+                android:textColor="@color/colorPrimaryDark"
                 android:drawableTint="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_alignParentTop="true"
@@ -87,6 +88,7 @@
                 android:id="@+id/date"
                 android:hint="Date (DD/MM/YY)"
                 android:inputType="date"
+                android:textColor="@color/colorPrimaryDark"
                 android:drawableTint="@color/colorPrimaryDark"
                 android:layout_marginTop="4dp"
                 android:textColorHint="@color/colorPrimaryDark"
@@ -105,6 +107,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/time"
                 android:layout_marginTop="4dp"
                 android:hint="Time (in 24 hours)"
@@ -123,6 +126,7 @@
                 >
 
                 <EditText
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/floor"
@@ -143,6 +147,7 @@
                 >
 
                 <EditText
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/capacity"
@@ -171,14 +176,14 @@
 
             <Spinner
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:id="@+id/spinner"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_below="@+id/preferred_room"
                 android:layout_alignLeft="@+id/preferred_room"
                 android:layout_alignStart="@+id/preferred_room"
                 android:background="@drawable/spinner_border"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="8dp"/>
 
 
 
@@ -222,7 +227,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="APPLY FITER"
+                android:text="APPLY FILTER"
                 android:id="@+id/apply_filter"
                 android:layout_below="@+id/stage"
                 android:layout_alignParentLeft="true"
@@ -230,12 +235,12 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/button_background"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="12dp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CLEAR"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="12dp"
                 android:id="@+id/Clear"
                 android:layout_below="@+id/apply_filter"
                 android:layout_alignParentLeft="true"
