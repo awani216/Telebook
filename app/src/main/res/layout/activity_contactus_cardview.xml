@@ -1,0 +1,99 @@
+<FrameLayout android:background="#ece4e4"
+    android:id="@+id/contactus_cardview_container"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:ignore="MergeRootFrame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contactus_cardview_cardview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="8dp"
+        card_view:cardCornerRadius="4dp"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="25dp"
+            android:id="@+id/contactus_cardview_r1"
+            android:padding="4dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text8"
+                android:id="@+id/contactus_cardview_viewdsgn"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:textColor="#030303"
+                android:layout_below="@+id/contactus_cardview_viewname"
+                android:layout_alignLeft="@+id/contactus_cardview_viewname"
+                android:layout_alignStart="@+id/contactus_cardview_viewname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:id="@+id/contactus_cardview_viewname"
+
+                android:textColor="#030303"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/contactus_cardview_viewimage"
+                android:layout_toEndOf="@+id/contactus_cardview_viewimage"
+                android:layout_marginLeft="6dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:gravity="left"
+                android:id="@+id/contactus_cardview_viewnum"
+
+                android:textSize="13dp"
+                android:textColor="#030303"
+                android:layout_below="@+id/contactus_cardview_viewdsgn"
+                android:layout_alignLeft="@+id/contactus_cardview_viewdsgn"
+                android:layout_marginTop="17dp"
+                android:layout_alignStart="@+id/contactus_cardview_viewdsgn" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/contactus_cardview_viewimage"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:contentDescription="image"
+                android:padding="4dp"
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:gravity="left"
+                android:id="@+id/contactus_cardview_viewemail"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                android:textColor="#030303"
+                android:layout_below="@+id/contactus_cardview_viewnum"
+                android:layout_alignLeft="@+id/contactus_cardview_viewdsgn"
+                android:layout_marginTop="2dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>
