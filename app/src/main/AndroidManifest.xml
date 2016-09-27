@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Settings.View.SettingsPage"/>
         <activity android:name=".LogIn.View.Login" />
         <activity android:name=".Tracking.View.Tracking_Vertical" />
         <activity android:name=".RegisterRoom.Room_Description" />

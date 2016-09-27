@@ -37,9 +37,9 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
         name=getIntent().getStringExtra(name);
         Toast.makeText(SelectRoom.this, ""+name, Toast.LENGTH_SHORT).show();
         linearLayoutManager= new LinearLayoutManager(this);
-        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Select Room");
+//        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Select Room");
 
         selectionPresenter = new SelectionPresenterImpl(this, new RetrofitOptionsProvider()) {
         };

@@ -5,17 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
+    android:padding="8dp"
     android:id="@+id/linearlayout_room_description"
     android:background="@color/colorPrimaryDark"
     >
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:titleTextColor="#ffffff"
-        android:id="@+id/toolbar_roomSelect"
-        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

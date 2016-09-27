@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1072590276478",
+    "firebase_url": "https://telebook-5b09f.firebaseio.com",
+    "project_id": "telebook-5b09f",
+    "storage_bucket": "telebook-5b09f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072590276478:android:2288ef675a2b48ad",
+        "android_client_info": {
+          "package_name": "com.example.telebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072590276478-ejjicc04r8b1ecbr8irl8rp7fe4cd38c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYmAuTUConuwtgUgT7vjIP1L8Y03IZMj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

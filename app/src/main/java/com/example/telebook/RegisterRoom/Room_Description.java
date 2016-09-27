@@ -49,9 +49,9 @@ public class Room_Description extends AppCompatActivity {
         });
 
 
-        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Form 1");
+//        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Form 1");
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
