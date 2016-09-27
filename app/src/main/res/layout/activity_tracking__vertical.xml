@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="23dp"
                 android:textStyle="bold"
-                android:text="Room number : SN-4"
+                android:text="Room number : FN-4"
                 />
             <TextView
                 android:layout_width="match_parent"

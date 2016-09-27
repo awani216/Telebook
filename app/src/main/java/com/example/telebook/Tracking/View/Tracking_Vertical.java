@@ -37,7 +37,7 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Tracking");
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_18dp);
-        toolbar.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

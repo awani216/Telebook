@@ -23,9 +23,9 @@ public class RoomSelection extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.room_booking);
-
-        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
-        toolbar.setTitle("Form 1");
+//
+//        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
+//        toolbar.setTitle("Form 1");
 
         Spinner spinner_conducted_by = (Spinner) findViewById(R.id.spinner_conducted_by);
         ArrayAdapter<CharSequence> adapter_conducted_by = ArrayAdapter.createFromResource(this,
