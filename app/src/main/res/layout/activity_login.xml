@@ -103,6 +103,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/whorl_login"
         android:layout_width="1dp"
+        android:visibility="gone"
         android:layout_height="1dp"
         app:whorlview_circle_colors="#F14336_#ffffff_#5677fc_#F44336_#4CAF50"
         app:whorlview_circle_speed="270"
@@ -112,5 +113,11 @@
         android:layout_below="@+id/login_title"
         android:layout_centerHorizontal="true">
     </com.tt.whorlviewlibrary.WhorlView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_login"
+        android:layout_centerInParent="true"
+        />
 </RelativeLayout>
 

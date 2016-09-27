@@ -26,7 +26,7 @@ public class TrackPresenterImpl implements TrackPresenter {
     public void getTracking(int userId, int reqId) {
 
         trackViewInterface.showLoading(true);
-        trackDataProvider.requestTrack(1, 1, new OnTrackReceived() {
+        trackDataProvider.requestTrack(3, 1, new OnTrackReceived() {
             @Override
             public void onSuccess(List<TrackData> trackDataList) {
                 trackViewInterface.showLoading(false);

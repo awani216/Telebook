@@ -36,6 +36,13 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_tracking);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Tracking");
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_18dp);
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         trackPresenter = new TrackPresenterImpl(this,new RetrofitTrackingProvider());
         trackAdapter = new TrackAdapter(this);
@@ -44,6 +51,7 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
         recyclerViewTracking.setLayoutManager(linearLayoutManager);
         recyclerViewTracking.setAdapter(trackAdapter);
         trackPresenter.getTracking(1,1);
+        recyclerViewTracking.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -59,11 +67,7 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
     @Override
     public void onTrackingRecieved(List<TrackData> trackDatas) {
         TrackData t;
-        for(int i=0;i<trackDatas.size();i++)
-        {
-            t=trackDatas.get(i);
-            Log.d("Resp",""+ t.getDesignation()+t.getName()+t.getMessage()+t.getResult());
-        }
+        recyclerViewTracking.setVisibility(View.VISIBLE);
         trackAdapter.setData(trackDatas);
         trackAdapter.notifyDataSetChanged();
     }

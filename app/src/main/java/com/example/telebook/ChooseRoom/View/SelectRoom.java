@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.example.telebook.ChooseRoom.Model.RetrofitOptionsProvider;
 import com.example.telebook.ChooseRoom.Presenter.SelectionPresenter;
@@ -26,13 +27,15 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
     private RoomAdapter roomAdapter;
     private SelectionPresenter selectionPresenter;
     private LinearLayoutManager linearLayoutManager;
+    String name,date,stime,etime,floor,prefRoom,capacity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_room);
         recyclerView=(RecyclerView)findViewById(R.id.recyclerViewSelectRoom);
         progressBar=(ProgressBar)findViewById(R.id.progressbar_selectroom);
-
+        name=getIntent().getStringExtra(name);
+        Toast.makeText(SelectRoom.this, ""+name, Toast.LENGTH_SHORT).show();
         linearLayoutManager= new LinearLayoutManager(this);
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
         setSupportActionBar(toolbar);

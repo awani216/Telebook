@@ -3,11 +3,13 @@ package com.example.telebook.LogIn;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.telebook.R;
 
@@ -16,6 +18,7 @@ import com.example.telebook.R;
  */
 public class RoomSelection extends Activity {
     String conducted_by;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

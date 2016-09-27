@@ -3,6 +3,7 @@ package com.example.telebook.LogIn.Model;
 import android.util.Log;
 
 import com.example.telebook.Helper.SharedPreference;
+import com.example.telebook.Helper.Urls;
 import com.example.telebook.LogIn.Api.LogIn_Info;
 import com.example.telebook.LogIn.OnLoginSent;
 import com.example.telebook.LogIn.View.SendLoginData;
@@ -31,7 +32,7 @@ public class RetrofitLogInProvider implements LoginProvider {
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
         Log.d("Response","1");
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(SharedPreference.Base_Url)
+                .baseUrl(Urls.Base_Url)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();
