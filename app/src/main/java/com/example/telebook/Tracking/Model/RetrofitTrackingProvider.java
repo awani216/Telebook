@@ -2,7 +2,6 @@ package com.example.telebook.Tracking.Model;
 
 import android.util.Log;
 
-import com.example.telebook.Helper.SharedPreference;
 import com.example.telebook.Helper.Urls;
 import com.example.telebook.Tracking.Api.TrackingApi;
 import com.example.telebook.Tracking.OnTrackReceived;

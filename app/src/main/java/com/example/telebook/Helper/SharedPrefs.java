@@ -11,10 +11,15 @@ public class SharedPrefs {
 
     // Shared preferences file name
     public static final String PREF_NAME = "NiceEyesData";
-    public static final String KEY_BRIGHTNESS = "brighteness";
-    public static final String KEY_IS_START = "ServiceStart";
     public static final String KEY_SHOW_NOTIFICATION = "KeyNotification";
     public static final String KEY_COLOR_ID = "ColorIdKey";
+    public static final String KEY_USER_NAME = "userName";
+    public static final String KEY_USER_ID = "userId";
+    public static final String KEY_IS_LOGGED_IN = "logIn";
+    public static final String KEY_VIBRATION= "vibration";
+
+
+
 
     public static String TAG = "Shared Preference";
     // Shared Preferences
@@ -32,22 +37,26 @@ public class SharedPrefs {
     public void setShowNotification(boolean isLoggedIn) {
         editor.putBoolean(KEY_SHOW_NOTIFICATION, isLoggedIn);
         editor.commit();
-        Log.d(TAG, "User login session modified!");
     }
 
     public boolean showNotification() {
         return pref.getBoolean(KEY_SHOW_NOTIFICATION, true);
     }
 
-    public void setService(boolean service) {
-        editor.putBoolean(KEY_IS_START, service);
+    public void setUsername(String username) {
+
+        editor.putString(KEY_USER_NAME, username);
+        Log.d("Response1",username);
         editor.commit();
-        Log.d(TAG, "User login session modified!");
+
+    }
+    public String getUserName()
+    {
+        Log.d("Response2",pref.getString(KEY_USER_NAME," User "));
+        return pref.getString(KEY_USER_NAME," User ");
     }
 
-    public boolean isService() {
-        return pref.getBoolean(KEY_IS_START, false);
-    }
+
 
     public int getColor() {
         return pref.getInt(KEY_COLOR_ID, 0);
@@ -59,13 +68,5 @@ public class SharedPrefs {
         editor.commit();
     }
 
-    public int getBrightness() {
-        return pref.getInt(KEY_BRIGHTNESS, 0);
-    }
 
-    public void setBrightness(int brightness) {
-
-        editor.putInt(KEY_BRIGHTNESS, brightness);
-        editor.commit();
-    }
 }

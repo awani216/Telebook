@@ -28,11 +28,11 @@
     <item android:title="About">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_contacts"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Contacts" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_developers"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Developers" />
         </menu>

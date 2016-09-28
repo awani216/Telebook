@@ -2,7 +2,6 @@ package com.example.telebook.LogIn.Model;
 
 import android.util.Log;
 
-import com.example.telebook.Helper.SharedPreference;
 import com.example.telebook.Helper.Urls;
 import com.example.telebook.LogIn.Api.LogIn_Info;
 import com.example.telebook.LogIn.OnLoginSent;

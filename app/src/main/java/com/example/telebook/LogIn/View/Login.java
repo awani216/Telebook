@@ -9,15 +9,12 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.telebook.Helper.SharedPreference;
+import com.example.telebook.Helper.SharedPrefs;
 import com.example.telebook.Home.View.Sample;
 import com.example.telebook.LogIn.Model.RetrofitLogInProvider;
 import com.example.telebook.LogIn.Presenter.LoginPresenter;
 import com.example.telebook.LogIn.Presenter.LoginPresenterImpl;
 import com.example.telebook.R;
-import com.example.telebook.Tracking.View.Tracking_Vertical;
-import com.example.telebook.WelcomePage.MainActivity;
-import com.tt.whorlviewlibrary.WhorlView;
 
 public class Login extends AppCompatActivity implements LogInView {
     EditText user_name,password;
@@ -25,11 +22,12 @@ public class Login extends AppCompatActivity implements LogInView {
     String name,pswrd;
     LoginPresenter loginPresenter;
     ProgressBar progressBar;
-    SharedPreference sharedPreference;
+    SharedPrefs sharedPreference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        sharedPreference = new SharedPrefs(this);
         user_name=(EditText)findViewById(R.id.user_name);
         password=(EditText)findViewById(R.id.password);
         progressBar=(ProgressBar)findViewById(R.id.progressbar_login);
@@ -38,6 +36,7 @@ public class Login extends AppCompatActivity implements LogInView {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                sharedPreference.setUsername("nit user");
                 Intent in = new Intent(Login.this,Sample.class);
                 startActivity(in);
             }
@@ -78,7 +77,7 @@ public class Login extends AppCompatActivity implements LogInView {
         if(sendLoginData.isSuccess())
         {
 //            sharedPreference.setUserid(sendLoginData.getId());
-//            sharedPreference.setUsername(name);
+            sharedPreference.setUsername(name);
             Intent next=new Intent(Login.this, Sample.class);
             startActivity(next);
             finish();
