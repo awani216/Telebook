@@ -5,10 +5,16 @@
     android:layout_height="150dp"
     >
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cc"
         android:src="@drawable/sanskriti"
         />
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cc"
+    android:layout_marginTop="12dp"
+    android:textColor="@color/colorPrimaryDark"
+    android:text="Sanskriti-the Cultural Committee of NIT Raipur is one of most active committees of the college.Organising the Cultural events or Programs in college is the part of their work."/>
 </LinearLayout>
