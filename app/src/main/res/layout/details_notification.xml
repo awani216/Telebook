@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="12dp">
+    <TextView
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="National Institute of Technology Raipur"
+        android:id="@+id/textView"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="56dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/view" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/nitrr_logo"
+        android:id="@+id/imageView2" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="8dp"
+        android:id="@+id/view">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:id="@+id/scrollView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Event Name: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/notifn_event_name"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/_notifn_display_event_name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_alignTop="@+id/notifn_event_name"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Venue:"
+                    android:layout_below="@+id/_notifn_display_event_name"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/notifn_venue"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/notifn_display_venue"
+                    android:layout_alignTop="@+id/notifn_venue"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Date: "
+                    android:layout_below="@+id/notifn_venue"
+                    android:id="@+id/notifn_date"
+                    android:layout_marginTop="8dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/notifn_display_date"
+                    android:layout_alignTop="@+id/notifn_date"
+                    android:layout_below="@+id/notifn_venue"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Time:"
+                    android:layout_below="@+id/notifn_display_date"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/notifn_time"
+                    />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/notifn_display_time"
+                    android:layout_alignTop="@+id/notifn_time"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Conducted by: "
+                    android:layout_below="@+id/notifn_display_time"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/notifn_conducted_by"
+                    />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Medium Text"
+                 android:id="@+id/notifn_display_conductedBy"
+                 android:layout_alignTop="@+id/notifn_conducted_by"
+                 android:layout_centerHorizontal="true"
+                 android:textColor="@color/colorPrimaryDark"
+                 />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Under: "
+                    android:layout_below="@+id/notifn_conducted_by"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/notifn_under"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/notifn_display_under"
+                    android:layout_alignTop="@+id/notifn_under"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Description: "
+                    android:layout_below="@+id/notifn_display_under"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/notifn_description"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/notifn_display_description"
+                    android:layout_alignTop="@+id/notifn_description"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL"
+                    android:id="@+id/notifn_bttn_caNCEL"
+                    android:layout_below="@+id/notifn_display_description"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_background"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ACCEPT"
+                    android:id="@+id/notifn_bttn_accept"
+                    android:layout_below="@+id/notifn_display_description"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_background"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REJECT"
+                    android:id="@+id/notifn_bttn_reject"
+                    android:layout_below="@+id/notifn_bttn_accept"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_background"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
