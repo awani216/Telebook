@@ -9,7 +9,7 @@ import retrofit2.http.GET;
  * Created by iket on 27/9/16.
  */
 public interface RequestInterface {
-    @GET("contacts/")
+    @GET("prof/")
     Call<JsonResponse> getContacts();
 }
 

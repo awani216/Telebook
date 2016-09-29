@@ -22,10 +22,10 @@ public class Tracking_Vertical extends AppCompatActivity implements TrackViewInt
 
     private TrackPresenter trackPresenter;
     private RecyclerView recyclerViewTracking;
-    private ProgressBar progressBar;
+
     private TrackAdapter trackAdapter;
     private  LinearLayoutManager linearLayoutManager;
-
+    private ProgressBar progressBar;
     private List<TrackData> mDataList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {

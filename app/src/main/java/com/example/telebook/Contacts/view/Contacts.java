@@ -35,7 +35,7 @@ public class Contacts extends AppCompatActivity implements ContactsInterface {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_contactus);
         toolbar.setTitle("Contacts");
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_18dp);
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

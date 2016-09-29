@@ -28,24 +28,33 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
     private SelectionPresenter selectionPresenter;
     private LinearLayoutManager linearLayoutManager;
     String name,date,stime,etime,floor,prefRoom,capacity;
+    boolean mike,stage,proj;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_room);
         recyclerView=(RecyclerView)findViewById(R.id.recyclerViewSelectRoom);
         progressBar=(ProgressBar)findViewById(R.id.progressbar_selectroom);
-        name=getIntent().getStringExtra(name);
-        Toast.makeText(SelectRoom.this, ""+name, Toast.LENGTH_SHORT).show();
+        name=getIntent().getExtras().getString("name");
+        date=getIntent().getExtras().getString("date");
+        capacity=getIntent().getExtras().getString("capacity");
+        prefRoom=getIntent().getExtras().getString("prefRoom");
+        stime=getIntent().getExtras().getString("stime");
+        etime=getIntent().getExtras().getString("etime");
+        floor=getIntent().getExtras().getString("floor");
+
+        int msp=getIntent().getExtras().getInt("msp");
+
         linearLayoutManager= new LinearLayoutManager(this);
 //        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("Select Room");
 
-        selectionPresenter = new SelectionPresenterImpl(this, new RetrofitOptionsProvider()) {
-        };
+        selectionPresenter = new SelectionPresenterImpl(this, new RetrofitOptionsProvider());
         roomAdapter=new RoomAdapter(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(roomAdapter);
+        selectionPresenter.reqRooms(name,date,floor,stime,etime,capacity,prefRoom,msp);
 
     }
 
@@ -55,7 +64,6 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
             progressBar.setVisibility(View.VISIBLE);
         else
             progressBar.setVisibility(View.INVISIBLE);
-
     }
 
     @Override
@@ -66,6 +74,7 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
 
     @Override
     public void showMessage() {
+        Toast.makeText(SelectRoom.this, "Error", Toast.LENGTH_SHORT).show();
 
     }
 }

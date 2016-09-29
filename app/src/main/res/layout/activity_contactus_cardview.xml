@@ -84,6 +84,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Medium Text"
                 android:gravity="left"
+                android:visibility="gone"
                 android:id="@+id/contactus_cardview_viewemail"
                 android:layout_gravity="center"
                 android:textSize="13dp"
