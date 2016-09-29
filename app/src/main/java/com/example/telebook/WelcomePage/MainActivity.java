@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_welcome_page);
         Button b1;
 
         CustomPagerAdapter adapter = new CustomPagerAdapter(MainActivity.this,noofsize);
@@ -60,4 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+
+        timer.cancel();
+
+    }
     }

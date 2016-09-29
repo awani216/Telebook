@@ -6,9 +6,17 @@
     >
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/e_cell"
         android:src="@drawable/ecell_logo"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e_cell"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="The Entrepreneurship Cell is a non-profit organization
+         run by the students of NIT Raipur that aims at manifesting the latent entrepreneurial spirit of the young students. We at E-Cell host various workshops, speaker sessions, innovative games, competitions for the aspiring entrepreneurs and support them by providing necessary resources such as seed funding, mentoring, consultancy and networking."/>
 </LinearLayout>
