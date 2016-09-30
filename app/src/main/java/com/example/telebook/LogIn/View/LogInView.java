@@ -8,4 +8,5 @@ public interface LogInView {
     void showMessage(String message);
     void onLoginVerified(SendLoginData sendLoginData);
 
+
 }

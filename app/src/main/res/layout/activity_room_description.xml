@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/date"
-                android:hint="Date (YYYY/MM/DD)"
+                android:hint="Date (DD-MM-YY)"
                 android:inputType="date"
                 android:textColor="@color/colorPrimaryDark"
                 android:drawableTint="@color/colorPrimaryDark"

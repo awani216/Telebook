@@ -53,8 +53,6 @@ public class RetrofitTrackingProvider implements TrackDataProvider{
             public void onFailure(Call<TrackResponse> call, Throwable t) {
                 Log.d("Response","4");
                 t.printStackTrace();
-
-
             }
         });
 

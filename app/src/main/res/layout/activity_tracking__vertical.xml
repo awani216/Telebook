@@ -83,6 +83,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewTracking"
         android:layout_width="match_parent"
+        android:background="@color/colorAccent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:clipToPadding="false"/>

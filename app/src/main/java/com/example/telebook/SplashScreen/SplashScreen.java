@@ -10,6 +10,7 @@ import com.example.telebook.Helper.SharedPrefs;
 import com.example.telebook.Home.View.Sample;
 import com.example.telebook.LogIn.View.Login;
 import com.example.telebook.R;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import me.wangyuwei.particleview.ParticleView;
 
@@ -43,7 +44,9 @@ public class SplashScreen extends Activity{
 
             @Override
             public void run() {
-                Log.d("Response",""+sharedPrefs.isLoggedIn());
+                String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+                Log.d("ResponseOtp",refreshedToken);
+
                 if(sharedPrefs.isLoggedIn()) {
                 i=new Intent(SplashScreen.this, Sample.class);
                     startActivity(i);
@@ -51,7 +54,6 @@ public class SplashScreen extends Activity{
                 }
                 else {
                   i = new Intent(SplashScreen.this, Login.class);
-
                     startActivity(i);
                     finish();
                 }

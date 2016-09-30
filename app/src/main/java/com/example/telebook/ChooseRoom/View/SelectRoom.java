@@ -46,9 +46,17 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
         int msp=getIntent().getExtras().getInt("msp");
 
         linearLayoutManager= new LinearLayoutManager(this);
-//        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_roomSelect);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Select Room");
+        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_selectroom);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Select Room");
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_18dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 
         selectionPresenter = new SelectionPresenterImpl(this, new RetrofitOptionsProvider());
         roomAdapter=new RoomAdapter(this);
@@ -77,4 +85,5 @@ public class SelectRoom extends AppCompatActivity implements SelectRoomInterface
         Toast.makeText(SelectRoom.this, "Error", Toast.LENGTH_SHORT).show();
 
     }
+
 }

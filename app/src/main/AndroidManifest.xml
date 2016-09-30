@@ -3,6 +3,10 @@
     package="com.example.telebook">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:allowBackup="true"
@@ -24,12 +28,21 @@
         <activity android:name=".RegisterRoom.Room_Description" />
         <activity android:name=".LogIn.RoomSelection" />
         <activity android:name=".WelcomePage.MainActivity" />
+        <activity android:name=".RegisterRoom.RoomBook"/>
+        <activity android:name=".EventPage.View.ListOfEvents"/>
         <activity
             android:name=".Home.View.Sample"
             android:label="@string/title_activity_sample"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChooseRoom.View.SelectRoom" />
         <activity android:name=".History.View.Show_history"></activity>
+        <service
+            android:name=".Helper.MyFirebaseService"
+            android:label="Firebase">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

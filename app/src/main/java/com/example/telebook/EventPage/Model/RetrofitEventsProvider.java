@@ -1,6 +1,8 @@
 package com.example.telebook.EventPage.Model;
 
 
+import android.util.Log;
+
 import com.example.telebook.EventPage.Api.RequestInterface;
 import com.example.telebook.EventPage.View.OnEventsReceived;
 import com.example.telebook.EventPage.View.jsonResponse;
@@ -40,12 +42,14 @@ public class RetrofitEventsProvider implements EventsProvider {
         call.enqueue(new Callback<jsonResponse>() {
             @Override
             public void onResponse(Call<jsonResponse> call, Response<jsonResponse> response) {
+                Log.d("ResponseOtp","4");
                 onEventsReceived.onSuccess(response.body().getEvents());
             }
 
             @Override
             public void onFailure(Call<jsonResponse> call, Throwable t) {
                 t.printStackTrace();
+                Log.d("ResponseOtp","5");
                 onEventsReceived.onFailure();
 
             }

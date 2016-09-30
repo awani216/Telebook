@@ -5,18 +5,21 @@ package com.example.telebook.EventPage.Model.data;
  */
 public class EventsData {
 
-    private String name,description,date,time,venue,image;
+    private String name,description,date,stime,etime,venue,image;
 
 
-    public EventsData(String name,  String date, String time, String venue, String description,String image) {
-        this.name =name;
-        this.image=image;
-        this.date=date;
-        this.venue=venue;
-        this.description=description;
-
+    public EventsData(String name, String description, String date, String stime, String etime, String venue, String image) {
+        this.name = name;
+        this.description = description;
+        this.date = date;
+        this.stime = stime;
+        this.etime = etime;
+        this.venue = venue;
+        this.image = image;
     }
-    public EventsData() {
+
+    public String getName() {
+        return name;
     }
 
     public String getDescription() {
@@ -27,45 +30,19 @@ public class EventsData {
         return date;
     }
 
+    public String getStime() {
+        return stime;
+    }
+
+    public String getEtime() {
+        return etime;
+    }
 
     public String getVenue() {
         return venue;
     }
 
-    public String getName() {
-        return name;
-    }
-
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getImage() {
-
         return image;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public void setVenue(String venue) {
-        this.venue = venue;
-    }
-
-    public String getEventName() {
-        return name;
-    }
-
-
-
-    public void setEventName(String name) {
-        this.name = name;
-    }
-
 }

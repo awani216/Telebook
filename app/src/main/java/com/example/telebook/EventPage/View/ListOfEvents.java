@@ -1,10 +1,12 @@
 package com.example.telebook.EventPage.View;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -41,7 +43,7 @@ public class ListOfEvents extends AppCompatActivity implements EventsInterface{
         });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewEvent);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar_events);
         eventsPresenter = new EventPresenterImpl(this, new RetrofitEventsProvider());
         adapter = new Adapter(this);
 
@@ -67,4 +69,10 @@ public class ListOfEvents extends AppCompatActivity implements EventsInterface{
         adapter.setData(eventDataList);
         adapter.notifyDataSetChanged();
     }
+
+
+    public void calendar(EventsData eventsData) {
+
+    }
+
 }

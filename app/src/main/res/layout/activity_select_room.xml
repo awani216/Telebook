@@ -13,16 +13,19 @@
         app:titleTextColor="#ffffff"
         android:id="@+id/toolbar_selectroom"
         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_selectroom"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"
+        >
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar_selectroom"
         android:id="@+id/recyclerViewSelectRoom"
-        android:padding="8dp"
-        >
 
-
-    </android.support.v7.widget.RecyclerView>
+        />
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,5 +35,5 @@
 
         />
 
-
+    </RelativeLayout>
 </RelativeLayout>

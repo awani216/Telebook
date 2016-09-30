@@ -58,8 +58,8 @@ public class Room_Description extends AppCompatActivity {
                     msp+=4;
                 name=_name.getText().toString();
                 date=_date.getText().toString();
-                stime=_stime.getText().toString();
-                etime=_etime.getText().toString();
+                stime=_stime.getText().toString().replace(':','.');
+                etime=_etime.getText().toString().replace(':','.');
                 floor=_floor.getText().toString();
                 prefRoom=spinner.getSelectedItem().toString();
                 capacity=_capacity.getText().toString();

@@ -26,7 +26,7 @@ public class EventPresenterImpl implements EventsPresenter {
 
     @Override
     public void requestEvents() {
-        Log.d("ResponseOtp","4");
+
 
         eventsInterface.ShowProgressBar(true);
         eventsProvider.requestEvents(new OnEventsReceived() {
