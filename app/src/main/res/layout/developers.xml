@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="DEVELOPERS"
+        android:id="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="56dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/view" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/developer_icon"
+        android:id="@+id/imageView2" />
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="8dp"
+            android:id="@+id/view8">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="8dp"
+            android:id="@+id/view1"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sourabh"
+                    android:id="@+id/sourabh_imv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sourabh Modi"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/textView14"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/sourabh_imv"
+                    android:layout_toEndOf="@+id/sourabh_imv" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Computer Science and Engineering(III SEM)"
+                    android:textSize="12sp"
+                    android:id="@+id/textView16"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/sourabh_imv"
+                    android:layout_toEndOf="@+id/sourabh_imv"
+                    android:layout_below="@+id/textView14"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sourabh_imv"
+                    android:text="e-mail id     : sourabh.modi14@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/email_sourabh"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_sourabh"
+                    android:text="contact no : 9039189251"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="16dp"
+            android:id="@+id/view3"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/awani"
+                    android:id="@+id/awani_imv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Awani Mishra"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/textView4"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/awani_imv"
+                    android:layout_toEndOf="@+id/awani_imv" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Computer Science and Engineering(III SEM)"
+                    android:textSize="12sp"
+                    android:id="@+id/textView6"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/awani_imv"
+                    android:layout_toEndOf="@+id/awani_imv"
+                    android:layout_below="@+id/textView4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/awani_imv"
+                    android:text="e-mail id     : awani.mishra216@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/email_awani"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_awani"
+                    android:text="contact no : 7587171836"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="16dp"
+            android:id="@+id/view2"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/iket"
+                    android:id="@+id/iket_imv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Iket Agarwal"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/textView3"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iket_imv"
+                    android:layout_toEndOf="@+id/iket_imv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Computer Science and Engineering(III SEM)"
+                    android:id="@+id/textView7"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/iket_imv"
+                    android:layout_toEndOf="@+id/iket_imv"
+                    android:layout_below="@+id/textView3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iket_imv"
+                    android:text="e-mail id     : iket.ag24@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/email_iket"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_iket"
+                    android:text="contact no  : 9174908579"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    </ScrollView>
+
+        </android.support.v7.widget.CardView>
+</RelativeLayout>
+</LinearLayout>
