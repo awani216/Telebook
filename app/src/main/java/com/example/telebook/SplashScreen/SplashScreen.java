@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
+import com.example.telebook.Helper.SharedPrefs;
+import com.example.telebook.Home.View.Sample;
 import com.example.telebook.LogIn.View.Login;
 import com.example.telebook.R;
 
@@ -15,6 +18,8 @@ import me.wangyuwei.particleview.ParticleView;
  */
 public class SplashScreen extends Activity{
     private ParticleView anime_text;
+    private SharedPrefs sharedPrefs;
+    Intent i;
 
     private static int SPLASH_TIME_OUT = 8000;
     @Override
@@ -22,7 +27,7 @@ public class SplashScreen extends Activity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.screen_splash);
-
+        sharedPrefs=new SharedPrefs(this);
         anime_text=(ParticleView)findViewById(R.id.anim_text);
         anime_text.startAnim();
 
@@ -38,10 +43,18 @@ public class SplashScreen extends Activity{
 
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreen.this,Login.class);
-                startActivity(i);
+                Log.d("Response",""+sharedPrefs.isLoggedIn());
+                if(sharedPrefs.isLoggedIn()) {
+                i=new Intent(SplashScreen.this, Sample.class);
+                    startActivity(i);
+                    finish();
+                }
+                else {
+                  i = new Intent(SplashScreen.this, Login.class);
 
-                finish();
+                    startActivity(i);
+                    finish();
+                }
 
             }
         }, SPLASH_TIME_OUT);

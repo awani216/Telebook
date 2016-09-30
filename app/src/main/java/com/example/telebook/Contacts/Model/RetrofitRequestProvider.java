@@ -1,5 +1,7 @@
 package com.example.telebook.Contacts.Model;
 
+import android.util.Log;
+
 import com.example.telebook.Contacts.api.RequestInterface;
 import com.example.telebook.Contacts.view.JsonResponse;
 import com.example.telebook.Contacts.view.OnContactsReceived;
@@ -33,20 +35,22 @@ public class RetrofitRequestProvider implements ContactsProvider {
 
         final RequestInterface request = retrofit.create(RequestInterface.class);
         Call<JsonResponse> call = request.getContacts();
+        Log.d("Response","1");
 
         call.enqueue(new Callback<JsonResponse>() {
             @Override
             public void onResponse(Call<JsonResponse> call, Response<JsonResponse> response) {
+                Log.d("Response","2");
                 onContactsReceived.onSuccess(response.body().getContacts());
             }
 
             @Override
             public void onFailure(Call<JsonResponse> call, Throwable t) {
-            onContactsReceived.onFailure();
+                t.printStackTrace();
+                onContactsReceived.onFailure();
+                Log.d("Response","3");
             }
         });
-
-
 
     }
 

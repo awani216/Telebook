@@ -39,6 +39,7 @@ public class Login extends AppCompatActivity implements LogInView {
                 sharedPreference.setUsername("nit user");
                 Intent in = new Intent(Login.this,Sample.class);
                 startActivity(in);
+                finish();
             }
         });
 //        progressBar=(ProgressBar)findViewById(R.id.progreessbar_login);
@@ -78,6 +79,8 @@ public class Login extends AppCompatActivity implements LogInView {
         {
 //            sharedPreference.setUserid(sendLoginData.getId());
             sharedPreference.setUsername(name);
+            sharedPreference.setKeyIsLoggedIn(true);
+            sharedPreference.setKeyUserId(sendLoginData.getId());
             Intent next=new Intent(Login.this, Sample.class);
             startActivity(next);
             finish();

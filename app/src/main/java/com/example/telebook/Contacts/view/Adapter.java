@@ -49,10 +49,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         ContactsData ContactData = ContactDataList.get(position);
 
         holder.name_p.setText(ContactData.getName());
-        holder.email_p.setText(ContactData.getEmail());
-        holder.dsgn_p.setText(ContactData.getDesignation());
+//        holder.email_p.setText(ContactData.getEmail());
+        holder.dsgn_p.setText(ContactData.getDesig());
         holder.number_p.setText(ContactData.getPhone());
-        imageLoader.load_circular_image(ContactData.getImage(), holder.image_p);
+        imageLoader.loadImage(ContactData.getImage(), holder.image_p);
 
     }
 
@@ -78,9 +78,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             name_p = (TextView) itemView.findViewById(R.id.contactus_cardview_viewname);
             dsgn_p = (TextView) itemView.findViewById(R.id.contactus_cardview_viewdsgn);
             number_p = (TextView) itemView.findViewById(R.id.contactus_cardview_viewnum);
-            email_p = (TextView) itemView.findViewById(R.id.contactus_cardview_viewemail);
-            Typeface tf = Typeface.createFromAsset(context.getAssets(),"fonts/Roboto-Black.ttf");
-            name_p.setTypeface(tf, Typeface.BOLD);
+//            email_p = (TextView) itemView.findViewById(R.id.contactus_cardview_viewemail);
+//            Typeface tf = Typeface.createFromAsset(context.getAssets(),"fonts/Roboto-Black.ttf");
+//            name_p.setTypeface(tf, Typeface.BOLD);
         }
 
     }

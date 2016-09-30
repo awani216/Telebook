@@ -6,5 +6,5 @@ package com.example.telebook.History.View;
 public interface HistoryInterface {
     void showLoading(boolean visible);
     void showMessage(String msg);
-    void onGetData();
+    void onGetData(HistoryData historyData);
 }

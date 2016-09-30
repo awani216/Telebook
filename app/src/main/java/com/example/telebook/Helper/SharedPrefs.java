@@ -39,10 +39,38 @@ public class SharedPrefs {
         editor.commit();
     }
 
+    public void setVibration(boolean isLoggedIn) {
+        editor.putBoolean(KEY_VIBRATION, isLoggedIn);
+        editor.commit();
+    }
+
+    public void setKeyIsLoggedIn(boolean login)
+    {
+        editor.putBoolean(KEY_IS_LOGGED_IN,login);
+        editor.commit();
+    }
+
+    public void setKeyUserId(int userID)
+    {
+        editor.putInt(KEY_USER_ID,userID);
+        editor.commit();
+    }
+    public  int getKeyUserId()
+    {
+        return pref.getInt(KEY_USER_ID,2001);
+    }
+    public boolean isLoggedIn()
+    {
+        return pref.getBoolean(KEY_IS_LOGGED_IN,false);
+    }
+
     public boolean showNotification() {
         return pref.getBoolean(KEY_SHOW_NOTIFICATION, true);
     }
 
+    public boolean showVibration() {
+        return pref.getBoolean(KEY_VIBRATION, true);
+    }
     public void setUsername(String username) {
 
         editor.putString(KEY_USER_NAME, username);

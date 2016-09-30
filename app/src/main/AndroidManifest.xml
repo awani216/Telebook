@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/nitrr_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".Settings.View.SettingsPage"/>
         <activity android:name=".LogIn.View.Login" />
+        <activity android:name=".Contacts.view.Contacts"/>
         <activity android:name=".Tracking.View.Tracking_Vertical" />
         <activity android:name=".RegisterRoom.Room_Description" />
         <activity android:name=".LogIn.RoomSelection" />
